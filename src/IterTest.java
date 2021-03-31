@@ -7,9 +7,12 @@ public class IterTest {
         IterTest test = new IterTest();
 
         Iter i = new Iter(test);
-
         while (i.hasNext()) System.out.println(i.next());
 
+        System.out.println("-------------");
+
+        Iter2 ii = new Iter2(test);
+        for(Integer e : ii) System.out.println(e);
 
     }
 }
